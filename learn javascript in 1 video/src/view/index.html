@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 24px;
+      }
+      table {
+        margin: auto;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        min-width: 140px;
+        text-align: inherit;
+        padding-right: 16px;
+      }
+      tr {
+        border-bottom: 1px solid black;
+      }
+      h1 {
+        text-align: center;
+        color: green;
+      }
+      .search-input {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      input {
+        line-height: 2em;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>User Table</h1>
+    <div class="search-input">
+      <label>Search : </label>
+      <input
+        name="search"
+        type="text"
+        oninput="onSearch(this)"
+        placeholder="type something to search"
+      />
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Website</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <script src="../js/index.js" type="module"></script>
+  </body>
+</html>
